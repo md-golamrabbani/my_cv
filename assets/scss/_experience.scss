@@ -1,0 +1,76 @@
+.working__experience {
+  position: relative;
+
+  & .content__description::before {
+    content: '';
+    position: absolute;
+    height: 90%;
+    width: 1px;
+    background-color: #333;
+    left: 35%;
+    bottom: 0;
+  }
+
+  & .content__description .job__block {
+
+    & .left__side,
+    & .right__side {
+      margin-top: 1.5rem;
+    }
+  }
+
+  & .content__description .job__block:first-child {
+
+    & .left__side,
+    & .right__side {
+      margin-top: 0;
+
+    }
+  }
+
+  & .job__block {
+    position: relative;
+    display: flex;
+
+    & .left__side {
+      position: relative;
+      width: 35%;
+      padding-right: 1rem;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: -1px;
+        right: -6.5px;
+        width: 0.75rem;
+        height: 0.75rem;
+        border-radius: 100%;
+        background-color: #333;
+      }
+    }
+
+    & .right__side {
+      position: relative;
+      width: 65%;
+      padding-left: 3rem;
+      border-left: 1px solid #333;
+
+      & .language {
+        background-color: #666;
+        color: #fff;
+        border-radius: 2rem;
+        padding: 0 0.5rem;
+        display: inline-block;
+        font-size: 9px;
+      }
+    }
+  }
+
+  & .table tr {
+    display: flex;
+
+    & td:last-child {
+      margin-left: 2rem;
+    }
+  }
+}

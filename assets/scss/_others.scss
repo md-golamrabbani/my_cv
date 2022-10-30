@@ -1,0 +1,13 @@
+.others_info {
+  .table td {
+    padding: 0.35rem 0;
+
+    &:first-child {
+      padding-right: 1rem;
+    }
+  }
+
+  & .bi-2x {
+    font-size: 2rem;
+  }
+}
